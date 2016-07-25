@@ -1,7 +1,7 @@
 // Your sbt build file. Guides on how to write one can be found at
 // http://www.scala-sbt.org/0.13/docs/index.html
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.10.6"
 
 sparkVersion := "1.4.0"
 
@@ -22,3 +22,7 @@ licenses := Seq("MIT" -> url("http://opensource.org/licenses/MIT"))
 
 // add any Spark Package dependencies using spDependencies.
 // e.g. spDependencies += "databricks/spark-avro:0.1"
+
+libraryDependencies += "org.apache.spark" %% "spark-core" % "1.2.0"
+
+libraryDependencies += "org.scalatest" % "scalatest_2.10" % "2.0" % "test"
