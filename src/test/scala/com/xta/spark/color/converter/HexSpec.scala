@@ -16,10 +16,18 @@ class HexSpec extends FlatSpec with ShouldMatchers {
   it should "be comparable" in {
     val black = new Hex("#000000")
     val anotherBlack = new Hex("#000000")
-    val white = new Hex("#ffffff")
+    val white = new Hex("#FFFFFF")
 
     black should equal(anotherBlack)
     (black === white) should equal(false)
+  }
+
+  it should "have red, green, and blue values" in {
+    val blueColor = new Hex("#0074D9")
+
+    blueColor.red should equal("00")
+    blueColor.green should equal("74")
+    blueColor.blue should equal("D9")
   }
 
 }

@@ -21,4 +21,12 @@ object Convert {
     }
   }
 
+  def HexToRgb(hex: Hex): Rgb = {
+    new Rgb((hexStringToInt(hex.red)), hexStringToInt(hex.green), hexStringToInt(hex.blue))
+  }
+
+  private def hexStringToInt(hex: String): Int = {
+    Integer.parseInt(hex, 16)
+  }
+
 }

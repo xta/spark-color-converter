@@ -6,7 +6,7 @@ scalaVersion := "2.10.6"
 sparkVersion := "1.4.0"
 
 // Don't forget to set the version
-version := "0.0.1"
+version := "0.0.2"
 
 // All Spark Packages need a license
 licenses := Seq("MIT" -> url("http://opensource.org/licenses/MIT"))
