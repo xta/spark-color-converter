@@ -9,7 +9,7 @@
 #### command line
 
     # cd to your $SPARK_HOME directory
-    ./bin/spark-shell --packages xta:spark-color-converter:0.0.2
+    ./bin/spark-shell --packages xta:spark-color-converter:0.0.3
     import com.xta.spark.color.converter._
 
 #### databricks.com

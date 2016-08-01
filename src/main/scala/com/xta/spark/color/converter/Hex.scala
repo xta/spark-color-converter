@@ -30,10 +30,7 @@ class Hex(v: String) {
     }
 
   override def hashCode:Int = {
-    val prime = 31
-    var result = 1
-
-    result * prime + value.hashCode()
+    value.hashCode()
   }
 
   //endregion
